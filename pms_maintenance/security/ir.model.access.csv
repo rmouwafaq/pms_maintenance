@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pms_hk_area_user,pms_hk_area_user,model_pms_hk_area,base.group_user,1,0,0,0
+access_pms_hk_area_admin_user,pms_hk_area_admin_user,model_pms_hk_area,maintenance.group_equipment_manager,1,1,1,1
+access_pms_hk_request_type_user,pms_hk_request_type_user,model_pms_hk_request_type,base.group_user,1,0,0,0
+access_pms_hk_request_type_admin_user,pms_hk_request_type_admin_user,model_pms_hk_request_type,maintenance.group_equipment_manager,1,1,1,1

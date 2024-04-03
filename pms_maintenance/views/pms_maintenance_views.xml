@@ -1,0 +1,28 @@
+<odoo>
+    <record id="hr_equipment_request_view_form_inherit" model="ir.ui.view">
+        <field name="name">equipment.request.form.inherit</field>
+        <field name="model">maintenance.request</field>
+        <field name="inherit_id" ref="maintenance.hr_equipment_request_view_form"/>
+        <field name="arch" type="xml">
+            <field name="owner_user_id" position="after">
+                <field name="hk_area_id"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="hr_equipment_request_view_tree_inherit" model="ir.ui.view">
+        <field name="name">equipment.request.tree.inherit</field>
+        <field name="model">maintenance.request</field>
+        <field name="inherit_id" ref="maintenance.hr_equipment_request_view_tree"/>
+        <field name="arch" type="xml">
+            <data>
+                 <xpath expr="//field[@name='user_id']" position="after">
+                      <field name="hk_area_id"/>
+                 </xpath>
+            </data>
+        </field>
+    </record>
+
+
+
+</odoo>

@@ -1,0 +1,55 @@
+
+<odoo>
+    <!-- Tree view Housekeeping Area -->
+    <record id="view_pms_hk_area_tree" model="ir.ui.view">
+        <field name="name">pms.hk.area.tree</field>
+        <field name="model">pms.hk.area</field>
+        <field name="arch" type="xml">
+            <tree string=" HK Area">
+                <field name="name"/>
+                <field name="active"/>
+                <field name="hk_state"/>
+                <field name="clean_state"/>
+            </tree>
+        </field>
+    </record>
+
+     <record id="view_pms_hk_area_form" model="ir.ui.view">
+        <field name="name">pms.hk.area.form</field>
+        <field name="model">pms.hk.area</field>
+        <field name="arch" type="xml">
+            <form string=" HK Area">
+                <header>
+
+                </header>
+                <sheet>
+                    <group>
+                         <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                        <field name="hk_state"/>
+                        <field name="clean_state"/>
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action of Hk Area -->
+    <record id="pms_hk_area_action" model="ir.actions.act_window">
+        <field name="name">HK Area</field>
+        <field name="res_model">pms.hk.area</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+   <menuitem
+    id="menu_pms_hk_area"
+    name="Maintenance HK Area"
+    parent="maintenance.menu_maintenance_configuration"
+    action="pms_hk_area_action"
+    groups="maintenance.group_equipment_manager"
+    sequence="10"/>
+
+</odoo>

@@ -1,0 +1,63 @@
+
+<odoo>
+    <!-- Tree view Hk Request Type -->
+    <record id="view_pms_hk_request_type_tree" model="ir.ui.view">
+        <field name="name">pms.hk.request.type.tree</field>
+        <field name="model">pms.hk.request.type</field>
+        <field name="arch" type="xml">
+            <tree string=" HK Request type">
+                <field name="name"/>
+                <field name="category_id"/>
+                <field name="equipment_id"/>
+                <field name="maintenance_team_id"/>
+                <field name="description"/>
+                <field name="duration"/>
+                <field name="priority"/>
+                <field name="color"/>
+            </tree>
+        </field>
+    </record>
+     <record id="view_pms_hk_request_type_form" model="ir.ui.view">
+        <field name="name">pms.hk.request.type.form</field>
+        <field name="model">pms.hk.request.type</field>
+        <field name="arch" type="xml">
+            <form string=" HK Request type">
+                <header>
+
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="category_id"/>
+                        <field name="equipment_id"/>
+                        <field name="maintenance_team_id"/>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                        <field name="duration"/>
+                        <field name="priority"/>
+                        <field name="color"/>
+                    </group>
+
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <!-- Action of Hk Area -->
+    <record id="pms_hk_request_type_action" model="ir.actions.act_window">
+        <field name="name">HK Request type</field>
+        <field name="res_model">pms.hk.request.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+   <menuitem
+    id="menu_pms_hk_request_type"
+    name="PMS HK Request Type"
+    parent="maintenance.menu_maintenance_configuration"
+    action="pms_hk_request_type_action"
+    groups="maintenance.group_equipment_manager"
+    sequence="10"/>
+
+</odoo>

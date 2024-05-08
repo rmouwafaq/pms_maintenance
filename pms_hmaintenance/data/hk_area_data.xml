@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="hk_area1" model="hk_area">
+            <field name="name">Room 1</field>
+            <field name="description">Description of Room 1</field>
+        </record>
+        <record id="hk_area2" model="hk_area">
+            <field name="name">Room 2</field>
+            <field name="description">Description of Room 2</field>
+        </record>
+        <record id="hk_area3" model="hk_area">
+            <field name="name">Room 3</field>
+            <field name="description">Description of Room 3</field>
+        </record>
+        <record id="hk_area4" model="hk_area">
+            <field name="name">Room 4</field>
+            <field name="description">Description of Room 4</field>
+        </record>
+        <record id="hk_area5" model="hk_area">
+            <field name="name">Room 5</field>
+            <field name="description">Description of Room 5</field>
+        </record>
+        <record id="hk_area6" model="hk_area">
+            <field name="name">Room 6</field>
+            <field name="description">Description of Room 6</field>
+        </record>
+        <record id="hk_area7" model="hk_area">
+            <field name="name">Room 7</field>
+            <field name="description">Description of Room 7</field>
+        </record>
+        <record id="hk_area8" model="hk_area">
+            <field name="name">Room 8</field>
+            <field name="description">Description of Room 8</field>
+        </record>
+        <record id="hk_area9" model="hk_area">
+            <field name="name">Room 9</field>
+            <field name="description">Description of Room 9</field>
+        </record>
+        <record id="hk_area10" model="hk_area">
+            <field name="name">Room 10</field>
+            <field name="description">Description of Room 10</field>
+        </record>
+        <record id="hk_area11" model="hk_area">
+            <field name="name">Room 11</field>
+            <field name="description">Description of Room 11</field>
+        </record>
+        <record id="hk_area12" model="hk_area">
+            <field name="name">Room 12</field>
+            <field name="description">Description of Room 12</field>
+        </record>
+        <record id="hk_area13" model="hk_area">
+            <field name="name">Room 13</field>
+            <field name="description">Description of Room 13</field>
+        </record>
+        <record id="hk_area14" model="hk_area">
+            <field name="name">Room 14</field>
+            <field name="description">Description of Room 14</field>
+        </record>
+        <record id="hk_area15" model="hk_area">
+            <field name="name">Room 15</field>
+            <field name="description">Description of Room 15</field>
+        </record>
+        <record id="hk_area16" model="hk_area">
+            <field name="name">Room 16</field>
+            <field name="description">Description of Room 16</field>
+        </record>
+        <record id="hk_area17" model="hk_area">
+            <field name="name">Room 17</field>
+            <field name="description">Description of Room 17</field>
+        </record>
+        <record id="hk_area18" model="hk_area">
+            <field name="name">Room 18</field>
+            <field name="description">Description of Room 18</field>
+        </record>
+        <record id="hk_area19" model="hk_area">
+            <field name="name">Room 19</field>
+            <field name="description">Description of Room 19</field>
+        </record>
+        <record id="hk_area20" model="hk_area">
+            <field name="name">Room 20</field>
+            <field name="description">Description of Room 20</field>
+        </record>
+        <record id="hk_area21" model="hk_area">
+            <field name="name">Room 21</field>
+            <field name="description">Description of Room 21</field>
+        </record>
+        <record id="hk_area22" model="hk_area">
+            <field name="name">Room 22</field>
+            <field name="description">Description of Room 22</field>
+        </record>
+        <record id="hk_area23" model="hk_area">
+            <field name="name">Room 23</field>
+            <field name="description">Description of Room 23</field>
+        </record>
+        <record id="hk_area24" model="hk_area">
+            <field name="name">Room 24</field>
+            <field name="description">Description of Room 24</field>
+        </record>
+        <record id="hk_area25" model="hk_area">
+            <field name="name">Room 25</field>
+            <field name="description">Description of Room 25</field>
+        </record>
+        <record id="hk_area26" model="hk_area">
+            <field name="name">Room 26</field>
+            <field name="description">Description of Room 26</field>
+        </record>
+        <record id="hk_area27" model="hk_area">
+            <field name="name">Room 27</field>
+            <field name="description">Description of Room 27</field>
+        </record>
+        <record id="hk_area28" model="hk_area">
+            <field name="name">Room 28</field>
+            <field name="description">Description of Room 28</field>
+        </record>
+        <record id="hk_area29" model="hk_area">
+            <field name="name">Room 29</field>
+            <field name="description">Description of Room 29</field>
+        </record>
+        <record id="hk_area30" model="hk_area">
+            <field name="name">Room 30</field>
+            <field name="description">Description of Room 30</field>
+        </record>
+
+        <!-- Add additional areas -->
+        <record id="hk_area31" model="hk_area">
+            <field name="name">Conference Room 1</field>
+            <field name="description">Description of Conference Room 1</field>
+        </record>
+        <record id="hk_area32" model="hk_area">
+            <field name="name">Conference Room 2</field>
+            <field name="description">Description of Conference Room 2</field>
+        </record>
+        <record id="hk_area33" model="hk_area">
+            <field name="name">Conference Room 3</field>
+            <field name="description">Description of Conference Room 3</field>
+        </record>
+        <record id="hk_area34" model="hk_area">
+            <field name="name">Floor 1</field>
+            <field name="description">Description of Floor 1</field>
+        </record>
+        <record id="hk_area35" model="hk_area">
+            <field name="name">Floor 2</field>
+            <field name="description">Description of Floor 2</field>
+        </record>
+        <record id="hk_area36" model="hk_area">
+            <field name="name">Floor 3</field>
+            <field name="description">Description of Floor 3</field>
+        </record>
+
+        <record id="hk_area37" model="hk_area">
+            <field name="name">Garden</field>
+            <field name="description">Description of Garden</field>
+        </record>
+        <record id="hk_area38" model="hk_area">
+            <field name="name">Hallway</field>
+            <field name="description">Description of Hallway</field>
+        </record>
+        <record id="hk_area39" model="hk_area">
+            <field name="name">Spa</field>
+            <field name="description">Description of Spa</field>
+        </record>
+        <record id="hk_area40" model="hk_area">
+            <field name="name">Pool</field>
+            <field name="description">Description of Pool</field>
+        </record>
+        <record id="hk_area41" model="hk_area">
+            <field name="name">Bar</field>
+            <field name="description">Description of Bar</field>
+        </record>
+        <record id="hk_area42" model="hk_area">
+            <field name="name">Restaurant</field>
+            <field name="description">Description of Restaurant</field>
+        </record>
+        <record id="hk_area43" model="hk_area">
+            <field name="name">Coffee</field>
+            <field name="description">Description of Coffee</field>
+        </record>
+        <record id="hk_area44" model="hk_area">
+            <field name="name">Gym</field>
+            <field name="description">Description of Gym</field>
+        </record>
+    </data>
+</odoo>

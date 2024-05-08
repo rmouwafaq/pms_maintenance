@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+        <record id="view_maintenance_request_form_inherit" model="ir.ui.view">
+            <field name="name">maintenance.request.form.inherit</field>
+            <field name="model">maintenance.request</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_request_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='maintenance_team_id']" position="before">
+                    <field name="icon_image" widget="image" class="oe_left oe_avatar" options="{'size': [120, 120]}" string=""/>
+                </xpath>
+                <!-- Autres champs et boutons comme précédemment -->
+                <xpath expr="//form/sheet/group" position="inside">
+                    <group>
+                        <field name="claimant_id"/>
+                        <field name="intervention_type_id"/>
+                        <field name="hk_area_id"/>
+                        <field name="photo_ids" widget="many2many_image">
+                            <tree>
+                                <field name="datas" widget="image" options="{'preview_image': 'datas', 'size': [250, 250]}"/>
+                            </tree>
+                        </field>
+                        <field name="user_id" options="{'no_create': True, 'no_quick_create': True, 'no_create_edit': True}"/>
+                        <button name="send_to_technician" type="object" string="Notify Responsible Technician" class="oe_highlight"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

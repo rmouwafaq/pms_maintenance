@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Maintenance Team Records -->
+        <record id="maintenance_team1" model="maintenance.team">
+            <field name="name">Team Heating, Ventilation and Air Conditioning</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_root'))]"/> <!-- Assuming base.user_root as a member -->
+            <field name="color">0</field>
+        </record>
+        <record id="maintenance_team2" model="maintenance.team">
+            <field name="name">Team Carpentry</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
+            <field name="color">1</field>
+        </record>
+        <record id="maintenance_team3" model="maintenance.team">
+            <field name="name">Team Plumbing</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
+            <field name="color">2</field>
+        </record>
+        <record id="maintenance_team4" model="maintenance.team">
+            <field name="name">Team Gardening</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
+            <field name="color">3</field>
+        </record>
+        <record id="maintenance_team5" model="maintenance.team">
+            <field name="name">Team Electricity</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
+            <field name="color">4</field>
+        </record>
+        <record id="maintenance_team6" model="maintenance.team">
+            <field name="name">Team Security</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
+            <field name="color">5</field>
+        </record>
+        <record id="maintenance_team7" model="maintenance.team">
+            <field name="name">Team Appliance Repair</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
+            <field name="color">6</field>
+        </record>
+        <record id="maintenance_team8" model="maintenance.team">
+            <field name="name">Team Pest Control</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
+            <field name="color">8</field> <!-- Adjust the color as needed -->
+        </record>
+        <record id="maintenance_team9" model="maintenance.team">
+            <field name="name">Team Painting</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
+            <field name="color">9</field> <!-- Adjust the color as needed -->
+        </record>
+        <record id="maintenance_team10" model="maintenance.team">
+            <field name="name">Team Media and Technology</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
+            <field name="color">10</field> <!-- Adjust the color as needed -->
+        </record>
+        <record id="maintenance_team11" model="maintenance.team">
+            <field name="name">Team Metallurgy</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
+            <field name="color">11</field> <!-- Adjust the color as needed -->
+        </record>
+        <record id="maintenance_team12" model="maintenance.team">
+            <field name="name">Team Elevator</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
+            <field name="color">12</field> <!-- Adjust the color as needed -->
+        </record>
+
+    </data>
+</odoo>

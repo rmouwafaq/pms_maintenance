@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+       <record id="intervention_type1" model="intervention_type">
+            <field name="name">TV out of service</field>
+            <field name="description">The TV is not functioning properly, needs repairs and maintenance.</field>
+            <field name="equipment_id" ref="maintenance_equipement_1"/>
+            <field name="equipment_category_id" ref="category4"/>
+            <field name="maintenance_team_id" ref="maintenance_team10"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo1.png"/>
+        </record>
+        <record id="intervention_type2" model="intervention_type">
+            <field name="name">No image on screen</field>
+            <field name="description">The TV screen displays no image, requires troubleshooting and repairs.</field>
+            <field name="equipment_id" ref="maintenance_equipement_1"/>
+            <field name="equipment_category_id" ref="category4"/>
+            <field name="maintenance_team_id" ref="maintenance_team10"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo1.png"/>
+        </record>
+        <record id="intervention_type3" model="intervention_type">
+            <field name="name">Lines displayed on TV screen</field>
+            <field name="description">The TV screen shows lines, indicating a display issue that needs attention.</field>
+            <field name="equipment_id" ref="maintenance_equipement_1"/>
+            <field name="equipment_category_id" ref="category4"/>
+            <field name="maintenance_team_id" ref="maintenance_team10"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo1.png"/>
+        </record>
+        <record id="intervention_type4" model="intervention_type">
+            <field name="name">Bad sound</field>
+            <field name="description">The TV produces poor sound quality, requiring audio system inspection and repairs.</field>
+            <field name="equipment_id" ref="maintenance_equipement_1"/>
+            <field name="equipment_category_id" ref="category4"/>
+            <field name="maintenance_team_id" ref="maintenance_team10"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo1.png"/>
+        </record>
+        <record id="intervention_type5" model="intervention_type">
+            <field name="name">No signal</field>
+            <field name="description">The TV is not receiving any signal, needs signal troubleshooting and fixes.</field>
+            <field name="equipment_id" ref="maintenance_equipement_1"/>
+            <field name="equipment_category_id" ref="category4"/>
+            <field name="maintenance_team_id" ref="maintenance_team10"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo1.png"/>
+        </record>
+        <record id="intervention_type6" model="intervention_type">
+            <field name="name">Bed legs are broken</field>
+            <field name="description">The bed's legs are damaged, requiring replacement or repair.</field>
+            <field name="equipment_id" ref="maintenance_equipement_2"/>
+            <field name="equipment_category_id" ref="category6"/>
+            <field name="maintenance_team_id" ref="maintenance_team2"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo2.png"/>
+        </record>
+        <record id="intervention_type7" model="intervention_type">
+            <field name="name">Bed bugs</field>
+            <field name="description">The bed is infested with bed bugs, needs treatment and pest control.</field>
+            <field name="equipment_id" ref="maintenance_equipement_2"/>
+            <field name="equipment_category_id" ref="category6"/>
+            <field name="maintenance_team_id" ref="maintenance_team8"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo2.png"/>
+        </record>
+        <record id="intervention_type8" model="intervention_type">
+            <field name="name">Cupboard door doesn't close</field>
+            <field name="description">The cupboard door doesn't close properly, needs adjustment or repair.</field>
+            <field name="equipment_id" ref="maintenance_equipement_3"/>
+            <field name="equipment_category_id" ref="category6"/>
+            <field name="maintenance_team_id" ref="maintenance_team2"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo3.png"/>
+        </record>
+        <record id="intervention_type9" model="intervention_type">
+            <field name="name">Drawers falling Apart</field>
+            <field name="description">The drawers are falling apart, require repair or replacement.</field>
+            <field name="equipment_id" ref="maintenance_equipement_3"/>
+            <field name="equipment_category_id" ref="category6"/>
+            <field name="maintenance_team_id" ref="maintenance_team2"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo3.png"/>
+        </record>
+        <record id="intervention_type10" model="intervention_type">
+            <field name="name">Cupboard door is crooked</field>
+            <field name="description">The cupboard door is crooked, needs adjustment or realignment.</field>
+            <field name="equipment_id" ref="maintenance_equipement_3"/>
+            <field name="equipment_category_id" ref="category6"/>
+            <field name="maintenance_team_id" ref="maintenance_team2"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo3.png"/>
+        </record>
+        <record id="intervention_type11" model="intervention_type">
+            <field name="name">Air conditioner is not working</field>
+            <field name="description">The air conditioner is not functioning, needs troubleshooting and repairs.</field>
+            <field name="equipment_id" ref="maintenance_equipement_4"/>
+            <field name="equipment_category_id" ref="category1"/>
+            <field name="maintenance_team_id" ref="maintenance_team1"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo4.png"/>
+        </record>
+        <record id="intervention_type12" model="intervention_type">
+            <field name="name">Air conditioner makes a strange noise</field>
+            <field name="description">The air conditioner makes unusual noises, indicating a potential issue.</field>
+            <field name="equipment_id" ref="maintenance_equipement_4"/>
+            <field name="equipment_category_id" ref="category1"/>
+            <field name="maintenance_team_id" ref="maintenance_team1"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo4.png"/>
+        </record>
+        <record id="intervention_type13" model="intervention_type">
+            <field name="name">Air conditioner smells bad</field>
+            <field name="description">The air conditioner emits a foul smell, needs inspection and cleaning.</field>
+            <field name="equipment_id" ref="maintenance_equipement_4"/>
+            <field name="equipment_category_id" ref="category1"/>
+            <field name="maintenance_team_id" ref="maintenance_team1"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo4.png"/>
+        </record>
+        <record id="intervention_type14" model="intervention_type">
+            <field name="name">Broken table</field>
+            <field name="description">The table is broken or damaged, requires repair or replacement.</field>
+            <field name="equipment_id" ref="maintenance_equipement_5"/>
+            <field name="equipment_category_id" ref="category6"/>
+            <field name="maintenance_team_id" ref="maintenance_team2"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo5.png"/>
+        </record>
+
+        <record id="intervention_type16" model="intervention_type">
+            <field name="name">Blocked bay window</field>
+            <field name="description">The bay window is obstructed, needs clearing for proper functionality.</field>
+            <field name="equipment_id" ref="maintenance_equipement_7"/>
+            <field name="equipment_category_id" ref="category10"/>
+            <field name="maintenance_team_id" ref="maintenance_team11"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo6.png"/>
+        </record>
+        <record id="intervention_type17" model="intervention_type">
+            <field name="name">Defective faucet</field>
+            <field name="description">The faucet is defective, requires repair or replacement.</field>
+            <field name="equipment_id" ref="maintenance_equipement_8"/>
+            <field name="equipment_category_id" ref="category3"/>
+            <field name="maintenance_team_id" ref="maintenance_team3"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo7.png"/>
+        </record>
+        <record id="intervention_type18" model="intervention_type">
+            <field name="name">Dripping tap</field>
+            <field name="description">The tap is dripping, needs fixing to prevent water wastage.</field>
+            <field name="equipment_id" ref="maintenance_equipement_8"/>
+            <field name="equipment_category_id" ref="category3"/>
+            <field name="maintenance_team_id" ref="maintenance_team3"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo7.png"/>
+        </record>
+        <record id="intervention_type19" model="intervention_type">
+            <field name="name">Blocked sink</field>
+            <field name="description">The sink is blocked, requires unclogging for proper drainage.</field>
+            <field name="equipment_id" ref="maintenance_equipement_9"/>
+            <field name="equipment_category_id" ref="category3"/>
+            <field name="maintenance_team_id" ref="maintenance_team3"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo8.png"/>
+        </record>
+        <record id="intervention_type20" model="intervention_type">
+            <field name="name">Sink - Water leak</field>
+            <field name="description">The sink is leaking water, needs repair to prevent water damage.</field>
+            <field name="equipment_id" ref="maintenance_equipement_9"/>
+            <field name="equipment_category_id" ref="category3"/>
+            <field name="maintenance_team_id" ref="maintenance_team3"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo8.png"/>
+        </record>
+         <record id="intervention_type21" model="intervention_type">
+            <field name="name">Elevator is out of order</field>
+            <field name="description">The elevator is not functioning, requires maintenance to resume operation.</field>
+            <field name="equipment_id" ref="maintenance_equipement_10"/>
+            <field name="equipment_category_id" ref="category10"/>
+            <field name="maintenance_team_id" ref="maintenance_team12"/>
+             <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo9.png"/>
+        </record>
+        <record id="intervention_type22" model="intervention_type">
+            <field name="name">Handles of room door Won’t Turn</field>
+            <field name="description">The door is not functioning properly, needs repair to ensure proper operation.</field>
+            <field name="equipment_id" ref="maintenance_equipement_11"/>
+            <field name="equipment_category_id" ref="category10"/>
+            <field name="maintenance_team_id" ref="maintenance_team11"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo10.png"/>
+
+        </record>
+        <record id="intervention_type23" model="intervention_type">
+            <field name="name">Bulb is burned out</field>
+            <field name="description">The bulb has burned out, requires replacement to restore illumination.</field>
+            <field name="equipment_id" ref="maintenance_equipement_12"/>
+            <field name="equipment_category_id" ref="category5"/>
+            <field name="maintenance_team_id" ref="maintenance_team5"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo11.png"/>
+
+        </record>
+        <record id="intervention_type24" model="intervention_type">
+            <field name="name">Chipped paint</field>
+            <field name="description">There are chipped areas in the paint, requires touch-up or repainting.</field>
+            <field name="equipment_id" ref="maintenance_equipement_13"/>
+            <field name="equipment_category_id" ref="category10"/>
+            <field name="maintenance_team_id" ref="maintenance_team9"/>
+           <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo12.png"/>
+
+        </record>
+        <record id="intervention_type25" model="intervention_type">
+            <field name="name">Electrical outlet is not working</field>
+            <field name="description">The electrical outlet is not functioning, needs inspection and repairs.</field>
+            <field name="equipment_id" ref="maintenance_equipement_14"/>
+            <field name="equipment_category_id" ref="category5"/>
+            <field name="maintenance_team_id" ref="maintenance_team5"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo13.png"/>
+
+        </record>
+        <record id="intervention_type26" model="intervention_type">
+            <field name="name">Detached power socket</field>
+            <field name="description">The power socket is detached, requires reattachment for usability.</field>
+            <field name="equipment_id" ref="maintenance_equipement_14"/>
+            <field name="equipment_category_id" ref="category5"/>
+            <field name="maintenance_team_id" ref="maintenance_team5"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo13.png"/>
+
+        </record>
+        <record id="intervention_type27" model="intervention_type">
+            <field name="name">Burnt power outlet</field>
+            <field name="description">The power outlet has burnt, needs replacement for safety and functionality.</field>
+            <field name="equipment_id" ref="maintenance_equipement_14"/>
+            <field name="equipment_category_id" ref="category5"/>
+            <field name="maintenance_team_id" ref="maintenance_team5"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo13.png"/>
+
+        </record>
+        <record id="intervention_type28" model="intervention_type">
+            <field name="name">refrigerator is not cold</field>
+            <field name="description">The refrigerator is not cooling properly, requires inspection and repairs.</field>
+            <field name="equipment_id" ref="maintenance_equipement_45"/>
+            <field name="equipment_category_id" ref="category8"/>
+            <field name="maintenance_team_id" ref="maintenance_team7"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo14.png"/>
+        </record>
+        <record id="intervention_type29" model="intervention_type">
+            <field name="name">refrigerator is making noise</field>
+            <field name="description">The refrigerator is producing unusual noise, needs investigation and fixes.</field>
+            <field name="equipment_id" ref="maintenance_equipement_45"/>
+            <field name="equipment_category_id" ref="category8"/>
+            <field name="maintenance_team_id" ref="maintenance_team7"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo14.png"/>
+        </record>
+        <record id="intervention_type30" model="intervention_type">
+            <field name="name">refrigerator leaks water</field>
+            <field name="description">The refrigerator is leaking water, requires repair to prevent damage.</field>
+            <field name="equipment_id" ref="maintenance_equipement_45"/>
+            <field name="equipment_category_id" ref="category8"/>
+            <field name="maintenance_team_id" ref="maintenance_team7"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo14.png"/>
+        </record>
+
+        <record id="intervention_type31" model="intervention_type">
+            <field name="name">Pool water is green</field>
+            <field name="description">The pool water has turned green, indicating a water quality issue that requires treatment.</field>
+            <field name="equipment_id" ref="maintenance_equipement_16"/>
+            <field name="equipment_category_id" ref="category10"/>
+            <field name="maintenance_team_id" ref="maintenance_team3"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo15.png"/>
+        </record>
+        <record id="intervention_type32" model="intervention_type">
+            <field name="name">Pool leak</field>
+            <field name="description">There is a leak in the pool, causing water loss and potentially damaging the pool structure.</field>
+            <field name="equipment_id" ref="maintenance_equipement_16"/>
+            <field name="equipment_category_id" ref="category10"/>
+            <field name="maintenance_team_id" ref="maintenance_team3"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo15.png"/>
+        </record>
+         <record id="intervention_type33" model="intervention_type">
+            <field name="name">Pool pump doesn't turn on</field>
+            <field name="description">The pool pump is not activating, potentially due to a failed motor or electrical issue.</field>
+            <field name="equipment_id" ref="maintenance_equipement_16"/>
+            <field name="equipment_category_id" ref="category10"/>
+            <field name="maintenance_team_id" ref="maintenance_team3"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo15.png"/>
+        </record>
+        <record id="intervention_type34" model="intervention_type">
+            <field name="name">Blocked toilet</field>
+            <field name="description">The toilet is clogged, requiring professional plumbing intervention to restore functionality.</field>
+            <field name="equipment_id" ref="maintenance_equipement_18"/>
+            <field name="equipment_category_id" ref="category3"/>
+            <field name="maintenance_team_id" ref="maintenance_team3"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo16.png"/>
+        </record>
+        <record id="intervention_type35" model="intervention_type">
+            <field name="name">Washing machine is leaking</field>
+            <field name="description">This issue typically involves water leakage from seals or hoses and requires immediate attention to prevent water damage.</field>
+            <field name="equipment_id" ref="maintenance_equipement_22"/>
+            <field name="equipment_category_id" ref="category9"/>
+            <field name="maintenance_team_id" ref="maintenance_team10"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo17.png"/>
+        </record>
+        <record id="intervention_type36" model="intervention_type">
+            <field name="name">Washing machine is not working</field>
+            <field name="description">The machine fails to operate, which could be due to motor failure, power supply issues, or control panel malfunctions.</field>
+            <field name="equipment_id" ref="maintenance_equipement_22"/>
+            <field name="equipment_category_id" ref="category9"/>
+            <field name="maintenance_team_id" ref="maintenance_team10"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo17.png"/>
+        </record>
+        <record id="intervention_type37" model="intervention_type">
+            <field name="name">Tumble dryer is not drying</field>
+            <field name="description">The dryer heats up but fails to dry clothes, indicating possible issues with the heating elements or air flow systems.</field>
+            <field name="equipment_id" ref="maintenance_equipement_23"/>
+            <field name="equipment_category_id" ref="category9"/>
+            <field name="maintenance_team_id" ref="maintenance_team10"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo17.png"/>
+        </record>
+        <record id="intervention_type38" model="intervention_type">
+            <field name="name">Tumble dryer is not turning</field>
+            <field name="description">The drum does not rotate, possibly due to a broken belt or a problem with the motor or capacitor.</field>
+            <field name="equipment_id" ref="maintenance_equipement_23"/>
+            <field name="equipment_category_id" ref="category9"/>
+            <field name="maintenance_team_id" ref="maintenance_team10"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo18.png"/>
+        </record>
+        <record id="intervention_type39" model="intervention_type">
+            <field name="name">Ironing machine is not working</field>
+            <field name="description">The machine fails to heat up, potentially due to electrical failures or heating element issues.</field>
+            <field name="equipment_id" ref="maintenance_equipement_24"/>
+            <field name="equipment_category_id" ref="category9"/>
+            <field name="maintenance_team_id" ref="maintenance_team10"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo19.png"/>
+        </record>
+        <record id="intervention_type40" model="intervention_type">
+            <field name="name">Surveillance Camera - No image</field>
+            <field name="description">The camera powers up but fails to transmit images, possibly due to lens issues or signal transmission problems.</field>
+            <field name="equipment_id" ref="maintenance_equipement_37"/>
+            <field name="equipment_category_id" ref="category7"/>
+            <field name="maintenance_team_id" ref="maintenance_team6"/>
+            <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo20.png"/>
+        </record>
+       <record id="intervention_type41" model="intervention_type">
+    <field name="name">Surveillance Camera is not working</field>
+    <field name="description">The camera is inoperative, possibly due to power issues, damaged cables, or lens obstruction.</field>
+    <field name="equipment_id" ref="maintenance_equipement_37"/>
+    <field name="equipment_category_id" ref="category7"/>
+    <field name="maintenance_team_id" ref="maintenance_team6"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo20.png"/>
+</record>
+<record id="intervention_type42" model="intervention_type">
+    <field name="name">Unable to connect to wifi</field>
+    <field name="description">Devices are failing to connect to WiFi, indicating possible issues with the router or signal interference.</field>
+    <field name="equipment_id" ref="maintenance_equipement_27"/>
+    <field name="equipment_category_id" ref="category4"/>
+    <field name="maintenance_team_id" ref="maintenance_team10"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo21.png"/>
+</record>
+<record id="intervention_type43" model="intervention_type">
+    <field name="name">Unrecognized Key</field>
+    <field name="description">Keys are not being recognized by the system, potentially due to issues with the key reader or system database.</field>
+    <field name="equipment_id" ref="maintenance_equipement_42"/>
+    <field name="equipment_category_id" ref="category7"/>
+    <field name="maintenance_team_id" ref="maintenance_team6"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo22.png"/>
+</record>
+<record id="intervention_type44" model="intervention_type">
+    <field name="name">Heater - Only cold air</field>
+    <field name="description">The heater is blowing cold air, which could indicate issues with the heating elements or thermostat malfunctions.</field>
+    <field name="equipment_id" ref="maintenance_equipement_32"/>
+    <field name="equipment_category_id" ref="category6"/>
+    <field name="maintenance_team_id" ref="maintenance_team1"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo23.png"/>
+</record>
+<record id="intervention_type45" model="intervention_type">
+    <field name="name">Heater does not turn on</field>
+    <field name="description">The heater fails to activate, possibly due to electrical issues, faulty switches, or a broken thermostat.</field>
+    <field name="equipment_id" ref="maintenance_equipement_32"/>
+    <field name="equipment_category_id" ref="category6"/>
+    <field name="maintenance_team_id" ref="maintenance_team1"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo23.png"/>
+</record>
+<record id="intervention_type46" model="intervention_type">
+    <field name="name">Oven doesn't heat</field>
+    <field name="description">The oven does not heat up, likely due to a malfunctioning heating element or thermostat issue.</field>
+    <field name="equipment_id" ref="maintenance_equipement_43"/>
+    <field name="equipment_category_id" ref="category8"/>
+    <field name="maintenance_team_id" ref="maintenance_team7"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo24.png"/>
+</record>
+<record id="intervention_type47" model="intervention_type">
+    <field name="name">Stove isn’t heating</field>
+    <field name="description">The stove's heating elements fail to warm up, possibly due to electrical faults or damaged coils.</field>
+    <field name="equipment_id" ref="maintenance_equipement_44"/>
+    <field name="equipment_category_id" ref="category8"/>
+    <field name="maintenance_team_id" ref="maintenance_team7"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo25.png"/>
+</record>
+<record id="intervention_type48" model="intervention_type">
+    <field name="name">Coffee machine isn't turning on</field>
+    <field name="description">The coffee machine does not power up, suggesting electrical issues or a faulty power supply.</field>
+    <field name="equipment_id" ref="maintenance_equipement_46"/>
+    <field name="equipment_category_id" ref="category8"/>
+    <field name="maintenance_team_id" ref="maintenance_team7"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo26.png"/>
+</record>
+<record id="intervention_type49" model="intervention_type">
+    <field name="name">Coffee machine is leaking water</field>
+    <field name="description">Water leakage detected, potentially due to worn seals or connection issues within the machine.</field>
+    <field name="equipment_id" ref="maintenance_equipement_46"/>
+    <field name="equipment_category_id" ref="category8"/>
+    <field name="maintenance_team_id" ref="maintenance_team7"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo26.png"/>
+</record>
+<record id="intervention_type50" model="intervention_type">
+    <field name="name">Poor print quality</field>
+    <field name="description">Printouts are of low quality, indicating potential issues with the toner or printer alignment.</field>
+    <field name="equipment_id" ref="maintenance_equipement_50"/>
+    <field name="equipment_category_id" ref="category4"/>
+    <field name="maintenance_team_id" ref="maintenance_team10"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo27.png"/>
+</record>
+<record id="intervention_type51" model="intervention_type">
+    <field name="name">Motion sensor can't detect movement properly</field>
+    <field name="description">The sensor fails to detect movement accurately, likely due to sensor calibration issues or obstructions.</field>
+    <field name="equipment_id" ref="maintenance_equipement_41"/>
+    <field name="equipment_category_id" ref="category7"/>
+    <field name="maintenance_team_id" ref="maintenance_team6"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo28.png"/>
+</record>
+<record id="intervention_type52" model="intervention_type">
+    <field name="name">False alarms</field>
+    <field name="description">The system triggers alarms without apparent cause, possibly due to sensor malfunctions or configuration errors.</field>
+    <field name="equipment_id" ref="maintenance_equipement_40"/>
+    <field name="equipment_category_id" ref="category7"/>
+    <field name="maintenance_team_id" ref="maintenance_team6"/>
+    <field name="image" type="base64" file="pms_hmaintenance/static/src/img/logo29.png"/>
+</record>
+
+
+    </data>
+</odoo>

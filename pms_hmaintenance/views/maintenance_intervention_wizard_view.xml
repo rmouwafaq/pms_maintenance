@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="maintenance_intervention_wizard_view_form" model="ir.ui.view">
+        <field name="name">maintenance.intervention.wizard.form</field>
+        <field name="model">maintenance.intervention.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create Intervention">
+                <sheet>
+                    <group>
+                        <field name="claimant_id"/>
+                        <field name="equipment_category_id" options="{'no_create': True, 'no_open': True}"/>
+                        <field name="equipment_id" options="{'no_create': True, 'no_open': True}"/>
+                        <field name="maintenance_team_id" options="{'no_create': True, 'no_open': True}"/>
+                        <field name="intervention_type_id" options="{'no_create': True, 'no_open': True}"/>
+                        <field name="hk_area_id" options="{'no_create': True, 'no_open': True}"/>
+                        <field name="claim_time"/>
+
+
+                        <field name="icon_image" widget="image" class="oe_avatar" options="{'size': [128, 128]}"/>
+
+
+                        <field name="photo_ids" widget="many2many_binary" options="{'no_create': True, 'no_open': True}">
+                            <tree>
+                                <field name="datas" widget="image" options="{'preview_image': 'datas', 'size': [128, 128]}"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <footer>
+                        <button string="Create Intervention" type="object" name="create_maintenance_request" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_maintenance_intervention_wizard" model="ir.actions.act_window">
+        <field name="name">Create Intervention</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">maintenance.intervention.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_maintenance_intervention_wizard"
+              name="Create Intervention"
+              parent="maintenance.menu_m_request"
+              action="action_maintenance_intervention_wizard"
+              sequence="10"/>
+</odoo>

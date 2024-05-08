@@ -1,0 +1,103 @@
+<odoo>
+    <!-- Vue form pour le modèle hk_area -->
+    <record id="hk_area_form_view" model="ir.ui.view">
+        <field name="name">hk_area_form</field>
+        <field name="model">hk_area</field>
+        <field name="arch" type="xml">
+            <form string="HK Area">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vue tree pour le modèle hk_area -->
+    <record id="hk_area_tree_view" model="ir.ui.view">
+        <field name="name">hk_area_tree</field>
+        <field name="model">hk_area</field>
+        <field name="arch" type="xml">
+            <tree string="HK Area">
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action pour le modèle hk_area -->
+    <record id="hk_area_action" model="ir.actions.act_window">
+        <field name="name">HK Area</field>
+        <field name="res_model">hk_area</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer ou sélectionner une zone de ménage.
+            </p>
+        </field>
+    </record>
+
+    <!-- Éléments de menu pour hk_area -->
+    <menuitem id="menu_hk_area"
+              name="HK Area"
+              parent="maintenance.menu_maintenance_configuration"
+              action="hk_area_action"
+              sequence="4"/>
+
+    <!-- Vue form pour le modèle intervention_type -->
+    <record id="intervention_type_form_view" model="ir.ui.view">
+        <field name="name">intervention_type_form</field>
+        <field name="model">intervention_type</field>
+        <field name="arch" type="xml">
+            <form string="Type of Intervention">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="equipment_category_id"/>
+                        <field name="equipment_id" domain="[('category_id', '=', equipment_category_id)]"/>
+                        <field name="maintenance_team_id"/>
+                         <field name="image" widget="image" options='{"size": [30, 30]}'/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vue tree pour le modèle intervention_type -->
+    <record id="intervention_type_tree_view" model="ir.ui.view">
+        <field name="name">intervention_type_tree</field>
+        <field name="model">intervention_type</field>
+        <field name="arch" type="xml">
+            <tree string="Type d'intervention">
+                <field name="name"/>
+                <field name="description"/>
+                <field name="equipment_category_id"/>
+                <field name="equipment_id"/>
+                <field name="maintenance_team_id"/>
+                <field name="image" widget="image" options='{"size": [30, 30]}'/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action pour le modèle intervention_type -->
+    <record id="intervention_type_action" model="ir.actions.act_window">
+        <field name="name">Types d'intervention</field>
+        <field name="res_model">intervention_type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer ou sélectionner un type d'intervention.
+            </p>
+        </field>
+    </record>
+
+    <!-- Éléments de menu pour intervention_type -->
+    <menuitem id="menu_intervention_type"
+              name="Types d'intervention"
+              parent="maintenance.menu_maintenance_configuration"
+              action="intervention_type_action"
+              sequence="5"/>
+</odoo>

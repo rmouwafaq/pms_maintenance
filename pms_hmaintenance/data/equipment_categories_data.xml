@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="category1" model="maintenance.equipment.category">
+            <field name="name">Heating, Ventilation and Air Conditioning</field>
+        </record>
+        <record id="category3" model="maintenance.equipment.category">
+            <field name="name">Plumbing</field>
+        </record>
+        <record id="category4" model="maintenance.equipment.category">
+            <field name="name">Media and Technology</field>
+        </record>
+        <record id="category5" model="maintenance.equipment.category">
+            <field name="name">Electricity</field>
+        </record>
+        <record id="category6" model="maintenance.equipment.category">
+            <field name="name">Furniture</field>
+        </record>
+        <record id="category7" model="maintenance.equipment.category">
+            <field name="name">Security</field>
+        </record>
+        <record id="category8" model="maintenance.equipment.category">
+            <field name="name">Kitchen and catering</field>
+        </record>
+        <record id="category9" model="maintenance.equipment.category">
+            <field name="name">Laundry Room</field>
+        </record>
+        <record id="category10" model="maintenance.equipment.category">
+            <field name="name">Other</field>
+        </record>
+    </data>
+</odoo>

@@ -232,6 +232,16 @@
             <field name="category_id" ref="category4"/>
             <!-- Other fields if applicable -->
         </record>
+        <record id="maintenance_equipement_51" model="maintenance.equipment">
+            <field name="name">Shower</field>
+            <field name="category_id" ref="category3"/>
+            <!-- Other fields if applicable -->
+        </record>
+        <record id="maintenance_equipement_52" model="maintenance.equipment">
+            <field name="name">Other</field>
+            <field name="category_id" ref="category10"/>
+            <!-- Other fields if applicable -->
+        </record>
 
 
 

@@ -57,17 +57,12 @@
             <field name="color">9</field> <!-- Adjust the color as needed -->
         </record>
         <record id="maintenance_team10" model="maintenance.team">
-            <field name="name">Team Media and Technology</field>
+            <field name="name">TV and High Technology</field>
             <field name="company_id" ref="base.main_company"/>
             <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
             <field name="color">10</field> <!-- Adjust the color as needed -->
         </record>
-        <record id="maintenance_team11" model="maintenance.team">
-            <field name="name">Team Metallurgy</field>
-            <field name="company_id" ref="base.main_company"/>
-            <field name="member_ids" eval="[(4, ref('base.user_admin'))]"/> <!-- Assuming base.user_admin as a member -->
-            <field name="color">11</field> <!-- Adjust the color as needed -->
-        </record>
+
         <record id="maintenance_team12" model="maintenance.team">
             <field name="name">Team Elevator</field>
             <field name="company_id" ref="base.main_company"/>

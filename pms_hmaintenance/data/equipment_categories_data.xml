@@ -8,7 +8,7 @@
             <field name="name">Plumbing</field>
         </record>
         <record id="category4" model="maintenance.equipment.category">
-            <field name="name">Media and Technology</field>
+            <field name="name">TV and High Technology</field>
         </record>
         <record id="category5" model="maintenance.equipment.category">
             <field name="name">Electricity</field>

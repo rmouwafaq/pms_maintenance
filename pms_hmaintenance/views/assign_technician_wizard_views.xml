@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <!-- View for Assign Technician Wizard -->
+        <record id="view_assign_technician_wizard_form" model="ir.ui.view">
+            <field name="name">assign.technician.wizard.form</field>
+            <field name="model">assign.technician.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Assign Technician">
+                    <group>
+                        <field name="maintenance_team_id" readonly="1"/>
+                        <field name="team_member_ids" invisible="1"/> <!-- Ensure this field is present in the view -->
+                        <field name="user_id"/>
+                    </group>
+                    <footer>
+                        <button string="Assign" type="object" name="assign_technician" class="oe_highlight"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

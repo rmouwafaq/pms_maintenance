@@ -1,14 +1,20 @@
 <odoo>
     <data>
+        <!-- Inherit maintenance request form view to add fields and the button -->
         <record id="view_maintenance_request_form_inherit" model="ir.ui.view">
             <field name="name">maintenance.request.form.inherit</field>
             <field name="model">maintenance.request</field>
             <field name="inherit_id" ref="maintenance.hr_equipment_request_view_form"/>
             <field name="arch" type="xml">
+                <!-- Display icon image -->
                 <xpath expr="//field[@name='maintenance_team_id']" position="before">
                     <field name="icon_image" widget="image" class="oe_left oe_avatar" options="{'size': [120, 120]}" string=""/>
                 </xpath>
-                <!-- Autres champs et boutons comme précédemment -->
+                <xpath expr="//field[@name='stage_id']" position="replace">
+                    <field name="stage_id" invisible="1"/>
+                    <field name="state" widget="statusbar"/>
+                </xpath>
+                <!-- Additional fields -->
                 <xpath expr="//form/sheet/group" position="inside">
                     <group>
                         <field name="claimant_id"/>
@@ -16,12 +22,49 @@
                         <field name="hk_area_id"/>
                         <field name="photo_ids" widget="many2many_image">
                             <tree>
-                                <field name="datas" widget="image" options="{'preview_image': 'datas', 'size': [250, 250]}"/>
+                                <field name="datas" widget="image" options="{'preview_image': 'datas', 'size': [200, 200]}"/>
                             </tree>
                         </field>
-                        <field name="user_id" options="{'no_create': True, 'no_quick_create': True, 'no_create_edit': True}"/>
-                        <button name="send_to_technician" type="object" string="Notify Responsible Technician" class="oe_highlight"/>
                     </group>
+                </xpath>
+                <!-- Buttons in the header -->
+                <xpath expr="//header/button[@name='archive_equipment_request']" position="before">
+                    <button name="open_assign_wizard" string="Assign" type="object" class="oe_highlight" invisible="state != 'new'"/>
+                </xpath>
+                <xpath expr="//header" position="inside">
+                    <button name="start_request" string="Start" type="object" class="oe_highlight" invisible="state != 'assigned'"/>
+                    <button name="block_request" string="Block" type="object" class="oe_highlight" invisible="state != 'inprogress'"/>
+                    <button name="open_done_wizard" string="Done" type="object" class="oe_highlight" invisible="state not in ('inprogress', 'blocked')"/>
+                </xpath>
+                <!-- Timer fields -->
+                <xpath expr="//form/sheet/group" position="inside">
+                    <group>
+                        <field name="timer_start_time" invisible="1"/>
+                        <field name="timer_stop_time" invisible="1"/>
+                        <field name="elapsed_time"/>
+                    </group>
+                </xpath>
+                <!-- Fields for done choice and description -->
+                <xpath expr="//form/sheet/group" position="inside">
+                    <group>
+                        <field name="done_choice"/>
+                        <field name="done_description"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Inherit maintenance request kanban view to add fields and the button -->
+        <record id="view_maintenance_request_kanban_inherit" model="ir.ui.view">
+            <field name="name">maintenance.request.kanban.inherit</field>
+            <field name="model">maintenance.request</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_request_view_kanban"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='stage_id']" position="after">
+                    <field name="state"/>
+                </xpath>
+                <xpath expr="//kanban" position="attributes">
+                    <attribute name="default_group_by">state</attribute>
                 </xpath>
             </field>
         </record>
